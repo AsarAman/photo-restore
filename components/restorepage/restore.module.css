@@ -1,0 +1,33 @@
+.restoreMarkup {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.restoreMarkup input {
+  border: 1px solid #9c9ea1e2;
+  
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.signIn {
+  text-align: center;
+}
+.buttons{
+  margin-top: 2rem;
+}
+.error{
+  text-align: center;
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  
+}
+
+
+
+@media screen and (min-width:550px){
+  .error{
+    font-size: 1.5rem;
+  }
+}

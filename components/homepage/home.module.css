@@ -1,0 +1,96 @@
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  max-width: 56rem;
+  text-align: center;
+  line-height: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+.description {
+  text-align: center;
+  max-width: 36rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  width: 13.25rem;
+  border: 1px solid #e5e7eb;
+  background-color: #f3f4f6;
+  color: var(--black-color);
+  transition: 0.3s all linear;
+}
+.buttonBlack {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.button:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.buttonBlack:hover {
+  background-color: #f3f4f6;
+  color: var(--black-color);
+}
+
+.examplePhotoPreviewContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.photoContainer {
+  text-align: center;
+}
+
+.photoContainer p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (max-width: 535px) {
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 463px) {
+  .buttonContainer,
+  .examplePhotoPreviewContainer {
+    flex-direction: column;
+  }
+}
