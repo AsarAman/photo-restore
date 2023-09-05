@@ -22,18 +22,15 @@ function Restore() {
   const {
     data: loadedData,
     isLoading,
-    error,
+    
   } = useSWR("/api/restore", fetcher);
-  console.log(loadedData);
-  console.log("error", error);
 
   //image-upload-handler
   const imageUploadHandler = (e) => {
     setRestoredImage();
-    console.log(e.target.files);
-    console.log(e.target.files[0]);
+
     const file = e.target.files[0];
-    console.log(file);
+
     const reader = new FileReader();
     if (file) {
       setPhotoName(file.name);
@@ -47,8 +44,6 @@ function Restore() {
     };
   };
 
-  console.log("photo name", photoName);
-
   //submitting the image file for restoration
   const submitHandler = async () => {
     if (!imageFile) {
@@ -59,16 +54,14 @@ function Restore() {
       const responseData = await axios.post("/api/restore", {
         data: imageFile,
       });
-      console.log(responseData);
+
       setIsLoading(false);
       setRestoredImage(responseData.data.data);
     } catch (error) {
       setErrorMsg(error.response.data.message);
       setIsLoading(false);
-      console.log(error.response.data.message);
     }
   };
-  console.log("status", status);
 
   //setting timer for error message
   useEffect(() => {
@@ -121,8 +114,8 @@ function Restore() {
             <div className={classes.photoContainer}>
               <p>Original Photo</p>
               <Image
-                width={475}
                 height={475}
+                width={475}
                 src={imageFile}
                 alt="user image "
               />
@@ -131,8 +124,8 @@ function Restore() {
               <div className={classes.photoContainer}>
                 <p>Restored Photo</p>
                 <Image
-                  height={475}
                   width={475}
+                  height={475}
                   src={restoredImage}
                   alt="user enhanced image"
                 />
@@ -144,7 +137,7 @@ function Restore() {
         )}
 
         <div className={`${classes.buttonContainer} ${restoreclasses.buttons}`}>
-          {session && !isLoading && (
+          {session && !isLoading && !restoredImage && (
             <button
               disabled={loading}
               className={`${classes.button} ${classes.buttonBlack}`}

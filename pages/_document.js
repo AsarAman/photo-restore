@@ -9,7 +9,7 @@ export default function Document() {
           name="description"
           content="Restore your old face photos and keep the memories alive."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <meta
           name="keywords"
           content="photo restore, photo enhancement, photo quality improvement"

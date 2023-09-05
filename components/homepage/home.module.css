@@ -57,9 +57,11 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  
 }
 .photoContainer {
   text-align: center;
+  
 }
 
 .photoContainer p {

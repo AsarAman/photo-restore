@@ -12,7 +12,7 @@ function Header() {
         </svg>
       </a>
       <a
-        href="https://github.com/Nutlope/restorePhotos"
+        href="https://github.com/AsarAman/photo-restore"
         aria-label="TaxPal on GitHub"
         target="_blank"
       >

@@ -16,11 +16,4 @@ export default NextAuth({
 
 
 
-//976441324367-2cfqp4eohug368k0751chb7h7drlk03e.apps.googleusercontent.com
 
-//client secret
-//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
-
-//https://key-viper-32930.upstash.io
-
-//AYCiASQgMDYyMjViMmEtNTA4Ny00MDFjLTg1ZTMtODM3NmM4OTRlZTlhNjM0MDQ2ODdjODA5NDA5NjlkMTA0NTRlOTU1NjU4Y2Y=
