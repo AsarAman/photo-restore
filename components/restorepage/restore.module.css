@@ -19,16 +19,12 @@
 .error{
   text-align: center;
   color: red;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+   margin-bottom: 1rem;
+  
   
 }
 
 
 
 
-@media screen and (min-width:550px){
-  .error{
-    font-size: 1.5rem;
-  }
-}
+
