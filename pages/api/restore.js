@@ -39,7 +39,7 @@ async function handler(req, res) {
         const result = await ratelimit.limit(identifier);
         res.setHeader("X-RateLimit-Limit", result.limit);
         res.setHeader("X-RateLimit-Remaining", result.remaining);
-        console.log("res", result);
+        
         // Calcualte the remaining time until generations are reset
         const diff = Math.abs(
           new Date(result.reset).getTime() - new Date().getTime()

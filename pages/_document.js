@@ -15,7 +15,7 @@ export default function Document() {
           content="photo restore, photo enhancement, photo quality improvement"
         />
         <meta name="author" content="Syed Asar Aman" />
-        <meta property="og:site_name" content="old-photo-restore.vercel.com" />
+        <meta property="og:site_name" content="photo-enhancement.vercel.app" />
         <meta
           property="og:description"
           content="Restore your old face photos and keep the memories alive."

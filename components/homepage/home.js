@@ -13,7 +13,7 @@ function Home() {
           memories can live on. 100% free – restore your photos today.
         </p>
         <div className={classes.buttonContainer}>
-          <button className={classes.button}>Fork This Repo</button>
+          <a href="https://github.com/AsarAman/photo-restore" className={classes.button}>Fork This Repo</a>
           <Link
             href="/restore"
             className={`${classes.button} ${classes.buttonBlack}`}
